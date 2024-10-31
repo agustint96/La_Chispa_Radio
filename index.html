@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover con Música</title>
+    <style>
+        *{
+            background-color: #f3f1ed;
+        }
+        /* Estilo básico de la imagen */
+        .hover-image {
+            width: 450px; 
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+            margin: 30px
+            
+        }
+
+        /* Efecto visual al hacer hover */
+        .hover-image:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen con hover -->
+    <img src="negra cafe nada de golpes bajos.png" alt="Imagen con música" class="hover-image" id="hoverImage">
+
+    <!-- Elemento de audio oculto -->
+    <audio id="hoverAudio" src="golpes bajos_mezcla2222.mp3" preload="auto"></audio>
+
+    <script>
+        const hoverImage = document.getElementById("hoverImage");
+        const hoverAudio = document.getElementById("hoverAudio");
+
+        // Evento para reproducir el audio cuando el mouse está sobre la imagen
+        hoverImage.addEventListener("mouseenter", () => {
+            hoverAudio.play();
+        });
+
+        // Evento para pausar el audio cuando el mouse sale de la imagen
+        hoverImage.addEventListener("mouseleave", () => {
+            hoverAudio.pause();
+            hoverAudio.currentTime = 0; // Reinicia la canción para que comience desde el principio al hacer hover nuevamente
+        });
+    </script>
+</body>
+</html>
