@@ -7,7 +7,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f1ed; /* Cambia el color de fondo según prefieras */
+    background-color: #f1d9bf; /* Cambia el color de fondo según prefieras */
     font-family: 'Roboto', sans-serif; /* Aplicamos la fuente Roboto */
 }
 
