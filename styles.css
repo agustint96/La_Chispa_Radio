@@ -7,8 +7,10 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1d9bf; /* Cambia el color de fondo según prefieras */
+    background-color: #e6e4e4; /* Cambia el color de fondo según prefieras */
     font-family: 'Roboto', sans-serif; /* Aplicamos la fuente Roboto */
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
 }
 
 /* Contenedor centrado para la imagen */
@@ -20,7 +22,10 @@ body, html {
     width: 100%;
     max-width: 900px; /* Ajusta el ancho máximo */
     padding: 20px;
+    filter: blur(10%);
+    
 }
+
 
 /* Imagen responsiva */
 .hover-image {
