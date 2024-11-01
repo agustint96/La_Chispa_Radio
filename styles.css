@@ -26,6 +26,25 @@ body, html {
     
 }
 
+.image-container--a{
+    color: #b0b0b0;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 19px;
+}
+
+.image-container--a:hover{
+    color: #1c1516;
+}
+.lato-thin {
+font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-size: 10px;
+  font-style: normal;
+  font-variation-settings:"wdth" 40;
+  }
+
+
 
 /* Imagen responsiva */
 .hover-image {
